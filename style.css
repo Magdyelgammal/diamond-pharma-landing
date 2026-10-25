@@ -1729,10 +1729,96 @@ footer {
   .contact-section { grid-template-columns: 1fr; gap: 36px; }
   .footer-main { flex-direction: column; align-items: flex-start; }
   .footer-links { width: 100%; }
-  .product-dialog[open] { grid-template-columns: 1fr; }
-  .dialog-image { position: static; height: 250px; min-height: 250px; }
-  .dialog-copy { padding: 26px; }
-  .modal-actions { flex-direction: column; }
+
+  /* Product Card on Mobile */
+  .product-image-button {
+    height: 250px;
+    padding: 22px 18px;
+  }
+  .product-image-button > img {
+    max-height: 190px;
+  }
+
+  /* Product Details Modal Dialog on Mobile */
+  .product-dialog {
+    width: calc(100% - 24px);
+    max-height: 92dvh;
+    border-radius: 16px;
+    margin: auto;
+  }
+  .product-dialog[open] {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .dialog-close {
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    z-index: 30;
+  }
+  .dialog-image {
+    position: relative;
+    flex-shrink: 0;
+    height: 190px;
+    min-height: 190px;
+    padding: 16px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--product-bg, #f7f9f7);
+  }
+  .dialog-image img {
+    max-height: 155px !important;
+    width: auto !important;
+    max-width: 80% !important;
+    transform: none !important;
+    object-fit: contain;
+  }
+  .dialog-copy {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    max-height: none;
+    min-height: 0;
+    padding: 18px 18px 26px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .dialog-copy h2 {
+    font-size: 24px;
+    margin-top: 6px;
+    line-height: 1.25;
+  }
+  .dialog-copy > p {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .modal-tabs {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 4px;
+    margin-top: 16px;
+    scrollbar-width: none;
+  }
+  .modal-tabs::-webkit-scrollbar {
+    display: none;
+  }
+  .modal-tab-btn {
+    padding: 8px 10px;
+    font-size: 11px;
+    white-space: nowrap;
+  }
+  .modal-actions {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
 }
 
 @media(prefers-reduced-motion: reduce) {
