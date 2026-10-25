@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite';
 export default defineConfig({
+  base: './',
   build: {
     rollupOptions: {
       onwarn(warning, warn) {
@@ -9,3 +10,4 @@ export default defineConfig({
     },
   },
 });
+
