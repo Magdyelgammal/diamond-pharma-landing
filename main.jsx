@@ -2,7 +2,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { AnimatePresence, motion, useReducedMotion, useScroll } from 'motion/react';
-import { ArrowUpRight, ArrowRight, ArrowDown, Plus, X, Menu, Phone, MapPin, Pause, Play, Heart, Sparkles, Compass, Eye, Diamond, Check, Leaf } from 'lucide-react';
+import { ArrowUpRight, ArrowRight, ArrowDown, Plus, X, Menu, Phone, MapPin, Heart, Sparkles, Compass, Eye, Diamond, Check, Leaf } from 'lucide-react';
 import { motionTokens as T, springs, shouldAnimate } from './motion';
 import { company, products, values, flavors } from './content';
 import { lozinOtherIngredients } from './product-details';
@@ -184,14 +184,13 @@ function ProductDialog({ product, onClose }) {
 
 function App() {
   const reduce = useReducedMotion();
-  const [paused, setPaused] = useState(false);
   const [menu, setMenu] = useState(false);
   const [category, setCategory] = useState('All products');
   const [flavor, setFlavor] = useState(0);
   const [selected, setSelected] = useState(null);
   const [heroTilt, setHeroTilt] = useState({ x: 0, y: 0 });
 
-  const animate = shouldAnimate({ reduced: reduce || paused });
+  const animate = shouldAnimate({ reduced: reduce });
   const { scrollYProgress } = useScroll();
   const currentFlavor = flavors[flavor];
   const categories = ['All products', 'Everyday essentials', 'For little ones', 'Adult nutrition', 'Night-time routine'];
@@ -238,17 +237,6 @@ function App() {
             <a className="nav-wa-btn" href={company.whatsappHref} target="_blank" rel="noopener noreferrer" title="Chat with us on WhatsApp">
               <WhatsAppIcon size={16} /> WhatsApp
             </a>
-
-            <button
-              className={`motion-toggle-pill ${paused ? 'active' : ''}`}
-              onClick={() => setPaused(!paused)}
-              aria-label={paused ? 'Resume animations' : 'Pause animations'}
-              title={paused ? 'Resume animations' : 'Pause animations'}
-              aria-pressed={paused}
-            >
-              {paused ? <Play size={12} /> : <Pause size={12} />}
-              <span>{paused ? 'Motion off' : 'Motion on'}</span>
-            </button>
 
             <a className="nav-contact" href="#contact">
               Let’s connect <ArrowUpRight size={16} />
@@ -470,7 +458,7 @@ function App() {
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: reduce || paused ? T.duration.instant : T.duration.fast }}
+                transition={{ duration: reduce ? T.duration.instant : T.duration.fast }}
               >
                 {/* Lozin C 7-Flavor Showcase */}
                 {isLozin && (
