@@ -419,7 +419,7 @@ p { line-height: 1.75; }
   position: absolute;
   bottom: 25px;
   left: -10px;
-  width: 78%;
+  width: 86%;
   z-index: 3;
   mix-blend-mode: multiply;
   pointer-events: none;
@@ -737,8 +737,8 @@ p { line-height: 1.75; }
   border: 1px solid var(--card-border);
   border-radius: 16px;
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  min-height: 470px;
+  grid-template-columns: 1fr 1.25fr;
+  min-height: 490px;
   margin-bottom: 32px;
   overflow: hidden;
   box-shadow: 0 10px 35px -10px rgba(17, 50, 71, 0.05);
@@ -863,7 +863,7 @@ p { line-height: 1.75; }
   place-items: center;
   overflow: hidden;
   background: radial-gradient(circle at 60% 50%, #ffffff 0%, #f6f8f5 70%);
-  padding: 40px;
+  padding: 30px 24px;
 }
 .flavor-ambient-glow {
   position: absolute;
@@ -875,11 +875,11 @@ p { line-height: 1.75; }
 }
 .lozin-visual img {
   position: relative;
-  width: 90%;
-  max-width: 440px;
+  width: 98%;
+  max-width: 590px;
   mix-blend-mode: multiply;
   z-index: 1;
-  filter: drop-shadow(0 15px 25px rgba(25, 60, 82, 0.12));
+  filter: drop-shadow(0 18px 30px rgba(25, 60, 82, 0.14));
 }
 .flavor-backdrop {
   position: absolute;
@@ -1462,6 +1462,11 @@ footer {
 .product-dialog[data-product="royal"] .dialog-image img {
   max-height: 380px;
   transform: scale(1.05);
+}
+.product-dialog[data-product="lozin"] .dialog-image img {
+  max-width: 95%;
+  max-height: 380px;
+  transform: scale(1.12);
 }
 .dialog-copy {
   padding: 44px 36px 36px;
