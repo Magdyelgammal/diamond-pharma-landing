@@ -1,6 +1,15 @@
-# Verification record — 20 October 2026
+# Verification record — 26 October 2026
+
+## Omega 3 Mond packaging replacement
+
+- Replaced the `omega-mond.webp` asset with the owner's latest bottle packaging.
+- The new pack features the updated white bottle with ribbed cap, DPI brand mark, gold "OMEGA 3 MOND" typography, active declaration ("Blend of Odourless Fish Oil and Vitamin D3", 2000 mg Omega 3 / 2000 IU Vitamin D3 per 2 softgels), heart, brain & eye icons, and 60 soft gelatin capsules.
+- The studio gradient lighting was normalized to seamless pure white to eliminate square bounding box artifacts under CSS `mix-blend-mode: multiply` on the `#faf6ee` background, while preserving the natural bottle drop shadow.
+- The previous asset is preserved as `omega-mond-backup.webp`.
+- The production build was tested and confirmed successful.
 
 ## Royal Mond approved packaging replacement
+
 
 - Replaced the `royal-mond.webp` asset with the owner's latest `royal 2.png` image, converted to lossless WebP at its original 1000 px dimensions (221,162 bytes). The supplied design, camera view, reflections and 30-capsule count are preserved.
 - The shared image key updates both the product card and details dialog. Both pack-size fields now show 30 capsules. The total remains eight families.
