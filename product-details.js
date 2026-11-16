@@ -1,12 +1,12 @@
 // Composition is transcribed from supplied packaging; benefit wording is conservative draft copy.
 export const productDetails = {
   omega: {
-    serving: 'Per 2 soft gelatin capsules (30 servings per container)',
+    serving: 'Per 2 soft gelatin capsules (15 servings per container)',
     composition: [
       ['Fish oil (Odourless)', '2000 mg'],
       ['— EPA (Eicosapentaenoic acid)', '600 mg'],
       ['— DHA (Docosahexaenoic acid)', '400 mg'],
-      ['Cholecalciferol (Vitamin D3 2000 IU)', '100 μg (100% DV)'],
+      ['Cholecalciferol (Vitamin D3 2000 IU)', '50 μg'],
     ],
     compositionNote: 'Concentrated odourless fish oil providing active omega-3 fatty acids (EPA & DHA) paired with cholecalciferol (vitamin D3).',
     benefits: [
@@ -15,8 +15,9 @@ export const productDetails = {
       'Supporting healthy vision and normal eye function.',
       'Supporting bone strength and normal immune defence.',
     ],
-    directions: 'Adults: take 2 soft gelatin capsules daily with water, preferably with a meal, or as directed by a healthcare professional.',
-    note: 'Contains fish and gelatin. Consult a healthcare professional before use if pregnant, nursing, taking anticoagulant medication, or managing a medical condition. Do not exceed the recommended daily serving.',
+    otherIngredients: 'Gelatin, glycerin, sorbitol, vitamin E, methylparaben and propylparaben.',
+    directions: 'Adults and children over 12 years of age: take 2 capsules daily with water, or as directed by a healthcare professional.',
+    note: 'Contains fish and gelatin. Do not use if allergic to fish or any of the ingredients. Excessive use may cause a laxative effect. Consult a doctor before use if pregnant, breastfeeding, taking any medication, or managing a medical condition. Do not exceed the recommended daily intake.',
   },
   d3k2: {
     serving: 'Per 1 soft gelatin capsule',

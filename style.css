@@ -987,9 +987,10 @@ p { line-height: 1.75; }
   max-width: 90%;
 }
 
-/* FerroMond and Royal Mond - Tuned balanced presentation */
+/* FerroMond, Royal Mond, and Omega 3 Mond - Tuned balanced box presentation */
 .product-card[data-product="ferro"] .product-image-button,
-.product-card[data-product="royal"] .product-image-button {
+.product-card[data-product="royal"] .product-image-button,
+.product-card[data-product="omega"] .product-image-button {
   padding: 22px 20px;
 }
 .product-card[data-product="ferro"] .product-image-button > img {
@@ -1001,12 +1002,14 @@ p { line-height: 1.75; }
   transform: scale(1.12) translateY(-6px);
 }
 
-.product-card[data-product="royal"] .product-image-button > img {
+.product-card[data-product="royal"] .product-image-button > img,
+.product-card[data-product="omega"] .product-image-button > img {
   max-height: 225px;
   max-width: 88%;
   transform: scale(1.05);
 }
-.product-card[data-product="royal"]:hover .product-image-button > img {
+.product-card[data-product="royal"]:hover .product-image-button > img,
+.product-card[data-product="omega"]:hover .product-image-button > img {
   transform: scale(1.11) translateY(-6px);
 }
 
@@ -1459,7 +1462,8 @@ footer {
   max-height: 380px;
   transform: scale(1.06);
 }
-.product-dialog[data-product="royal"] .dialog-image img {
+.product-dialog[data-product="royal"] .dialog-image img,
+.product-dialog[data-product="omega"] .dialog-image img {
   max-height: 380px;
   transform: scale(1.05);
 }
