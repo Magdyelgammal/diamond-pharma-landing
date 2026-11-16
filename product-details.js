@@ -42,8 +42,8 @@ export const productDetails = {
     serving: 'Key nutrients',
     composition: [['Vitamin A'], ['Vitamin C'], ['Vitamin D3'], ['Vitamin E'], ['Folate (B9)'], ['Vitamin B12'], ['Vitamin B5'], ['Iodine'], ['Magnesium'], ['Zinc'], ['Sodium']],
     benefits: ['Supporting children’s daily nutritional intake.'],
-    directions: 'For children 2 years and above. Follow the directions on the 120-gummy pack or your physician’s advice.',
-    note: 'The nutrient list is shown here; check the 120-gummy pack for exact amounts and serving information. Do not exceed the recommended daily intake.',
+    directions: 'For children 2 years and above. Follow the directions on the 30-gummy pack or your physician’s advice.',
+    note: 'The nutrient list is shown here; check the 30-gummy pack for exact amounts and serving information. Do not exceed the recommended daily intake.',
   },
   osteo: {
     serving: 'Amounts per 10 ml / 15 ml',
