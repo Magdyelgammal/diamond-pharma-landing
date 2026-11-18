@@ -3,6 +3,8 @@ export const company = {
   name: 'Diamond Pharmaceutical Industries',
   phone: '+20 101 784 5809',
   phoneHref: 'tel:+201017845809',
+  secondaryPhone: '+20 100 126 6962',
+  secondaryPhoneHref: 'tel:+201001266962',
   whatsapp: '+20 101 784 5809',
   whatsappHref: 'https://api.whatsapp.com/send?phone=201017845809&text=Hello%20Diamond%20Pharma%2C%20I%20would%20like%20to%20inquire%20about%20your%20products.',
   address: '36 Mohamed Kamel Hussein Street, Apartment 41, 4th Floor, New Nozha, Cairo, Egypt',

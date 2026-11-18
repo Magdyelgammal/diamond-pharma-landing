@@ -672,6 +672,15 @@ function App() {
               <ArrowUpRight size={19} />
             </a>
 
+            <a className="contact-item" href={company.secondaryPhoneHref}>
+              <span className="contact-icon"><Phone size={20} /></span>
+              <div>
+                <span>Additional Telephone Line</span>
+                <strong>{company.secondaryPhone}</strong>
+              </div>
+              <ArrowUpRight size={19} />
+            </a>
+
             <a className="contact-item" href={company.mapsHref} target="_blank" rel="noopener noreferrer" title="View on Google Maps">
               <span className="contact-icon"><MapPin size={20} /></span>
               <div>
